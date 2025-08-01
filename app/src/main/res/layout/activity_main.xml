@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F47878"
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@mipmap/ic_launcher"
+        android:padding="@android:dimen/app_icon_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"/>
+
+
+    <EditText
+        android:id="@+id/inputemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:layout_margin="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Password"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/border"
+        android:layout_margin="10dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/cardview_default_elevation"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="1dp"
+        android:layout_marginTop="10dp">
+
+        <!-- Left Divider -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#070000" />
+
+        <!-- Center Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="#070000"
+            android:paddingHorizontal="8dp"
+            android:textSize="16sp" />
+
+        <!-- Right Divider -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#070000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/googlebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Countinue with Google"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Chef? Sign Up"
+        android:textAlignment="center"
+        android:textSize="17dp"/>
+
+
+</LinearLayout>
